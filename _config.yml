@@ -1,4 +1,4 @@
-baseurl: "/docs" # the subpath of your site, e.g. /blog/
+baseurl: "/bank-train-wiki" # the subpath of your site, e.g. /blog/
 title: '在线金融学院'
 desc: '维基知识库'
 sidebar_title: '内容分类'

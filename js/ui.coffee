@@ -9,7 +9,7 @@ jQuery(document).on 'page:change', ->
     if window.cached_sidebar?
       jQuery('.sidebar').html window.cached_sidebar
     else
-      jQuery.get '/docs/sidebar.html', (html)->
+      jQuery.get '/bank-train-wiki/sidebar.html', (html)->
         window.cached_sidebar = html
         jQuery('.sidebar').html(html)
 
@@ -55,7 +55,7 @@ jQuery(document).on 'page:change', ->
     cached_data = null
     ob_value.subscribe (query)->
       if cached_data is null
-        ob_ajax = jQuery.getJSONAsObservable '/docs/js/index.json'
+        ob_ajax = jQuery.getJSONAsObservable '/bank-train-wiki/js/index.json'
           .pluck 'data'
           .subscribe (data)-> 
             cached_data = data
