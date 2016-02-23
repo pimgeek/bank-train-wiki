@@ -1,0 +1,15 @@
+---
+---
+
+{
+  "entries": [
+    {% for wiki in site.wikis %}
+      {
+        "title": "{{ wiki.title }}",
+        "term": "{{ wiki.term }}",
+        "related_terms": "{{ wiki.related_terms }}"
+      },
+    {% endfor %}
+    {}
+  ]
+}

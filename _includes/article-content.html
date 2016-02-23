@@ -1,0 +1,22 @@
+<a class='see-github' href='https://github.com/pimgeek/{{ page.refbook }}' target='_blank'>
+  <i class='fa fa-chevron-right'></i>
+  <span>访问 github 页面</span>
+</a>
+
+<h4>文章主题</h4>
+
+<div class='article-title'>{{ page.title }}</div>
+
+<hr />
+
+{{ content }}
+
+<hr />
+
+<h4>文章所包含的概念/术语</h4>
+<div class='related-terms'>
+  {% for related_term in page.related_terms %}
+    <div class='related-term'>{{ related_term }}</div>
+  {% endfor %}
+</div>
+

@@ -1,0 +1,18 @@
+kc-cont-bank-basic:
+  name: 公共基础
+
+kc-cont-accounting-basic:
+  name: 会计基础
+
+kc-cont-personal-finance:
+  name: 个人理财
+
+kc-cont-company-debt:
+  name: 公司信贷
+
+kc-cont-risk-mgmt:
+  name: 风险管理
+
+kc-cont-operator-practice:
+  name: 柜员操作实训教材
+
