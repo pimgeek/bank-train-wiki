@@ -1,0 +1,15 @@
+<h1>
+  <i class='fa fa-github'></i>
+  <span>维基：{{ page.title }}</span>
+</h1>
+
+<ul>
+  {% assign wikis = site.wikis | where: 'refwiki', page.title %}
+  {% for wiki in wikis %}
+    <li>
+      <strong><a class='wiki' href="{{ site.baseurl }}{{ wiki.url | downcase }}">{{ wiki.term }}</a></strong>
+      <!-- <strong><a class='wiki' href="{{ site.baseurl }}/wikis/{{ wiki.term | downcase | replace:'_','-' | replace:'.','-' }}.html">{{ wiki.term }}</a></strong> -->
+      <p class='term'>{{ wiki.term }}</p>
+    </li>
+  {% endfor %}
+</ul>

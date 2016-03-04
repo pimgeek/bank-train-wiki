@@ -22,9 +22,9 @@ redcarpet:
   - footnotes
 
 collections:
-  refbooks:
+  refsrcs:
     output: true
-    permalink: refbooks/:path/index.html
+    permalink: refsrcs/:path/index.html
   articles:
     output: true
     permalink: articles/:title.html

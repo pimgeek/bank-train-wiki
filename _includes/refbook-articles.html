@@ -1,0 +1,19 @@
+<h1>
+  <i class='fa fa-github'></i>
+  <span>github.com/pimgeek/{{ page.title }}</span>
+</h1>
+
+<a class='see-github' href='https://github.com/pimgeek/{{ page.title }}' target='_blank'>
+  <i class='fa fa-chevron-right'></i>
+  <span>访问 github 页面</span>
+</a>
+
+<ul>
+  {% assign articles = site.articles | where: 'refbook', page.title %}
+  {% for article in articles %}
+    <li>
+      <strong><a class='article' href="{{ site.baseurl }}{{ article.url | downcase }}">{{ article.reader_title }}</a></strong>
+      <p class='reader_title'>{{ article.reader_title }}</p>
+    </li>
+  {% endfor %}
+</ul>

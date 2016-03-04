@@ -1,18 +1,18 @@
 ---
 ---
 
-{% for refbook in site.data.refbooks %}
-  {% assign key = refbook[0] %}
-  {% assign value = refbook[1] %}
+{% for ref in site.data.refs %}
+  {% assign key = ref[0] %}
+  {% assign value = ref[1] %}
   <div class='category'>
     <div class='name'>
-      <h4><a href="{{ site.baseurl }}/refbooks/{{ key | downcase | replace:' ','-' }}">{{ value.name }}</a></h4>
+      <h4><a href="{{ site.baseurl }}/refsrcs/{{ key | downcase | replace:' ','-' }}">{{ value.name }}</a></h4>
     </div>
     <div class='articles'>
-      {% assign wikis = site.wikis | where: 'refbook', key %}
-      {% for wiki in wikis %}
+      {% assign refsrcs = site.refsrcs | where: 'refbook', key %}
+      {% for refsrc in refsrcs %}
         <div class='{{ klass }}'>
-          <a href="{{ site.baseurl }}/wikis/{{ wiki.title | downcase | replace:'_','-' | replace:'.','-' }}.html">{{ wiki.title }}</a>
+          <a href="{{ site.baseurl }}/refsrcs/{{ refsrc.title | downcase | replace:'_','-' | replace:'.','-' }}.html">{{ refsrc.title }}</a>
         </div>
       {% endfor %}
     </div>
