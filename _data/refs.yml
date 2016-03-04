@@ -4,33 +4,33 @@ kc-cont-bank-basic:
 bank-basic-glossary:
   name: 公共基础百科词条
 
-kc-cont-accounting-basic:
-  name: 会计基础
-
-accounting-basic-glossary:
-  name: 会计基础百科词条
-
-kc-cont-personal-finance:
-  name: 个人理财
-
-personal-finance-glossary:
-  name: 个人理财百科词条
-
-kc-cont-company-debt:
-  name: 公司信贷
-
-company-debt-glossary:
-  name: 公司信贷百科词条
-
-kc-cont-risk-mgmt:
-  name: 风险管理
-
-risk-mgmt-glossary:
-  name: 风险管理百科词条
-
-kc-cont-operator-practice:
-  name: 柜员操作实训教材
-
-operator-practice-glossary:
-  name: 柜员操作实训教材百科词条
+# kc-cont-accounting-basic:
+#   name: 会计基础
+# 
+# accounting-basic-glossary:
+#   name: 会计基础百科词条
+# 
+# kc-cont-personal-finance:
+#   name: 个人理财
+# 
+# personal-finance-glossary:
+#   name: 个人理财百科词条
+# 
+# kc-cont-company-debt:
+#   name: 公司信贷
+# 
+# company-debt-glossary:
+#   name: 公司信贷百科词条
+# 
+# kc-cont-risk-mgmt:
+#   name: 风险管理
+# 
+# risk-mgmt-glossary:
+#   name: 风险管理百科词条
+# 
+# kc-cont-operator-practice:
+#   name: 柜员操作实训教材
+# 
+# operator-practice-glossary:
+#   name: 柜员操作实训教材百科词条
 
